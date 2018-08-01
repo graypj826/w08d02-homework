@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Pokemon from "../Pokemon/"
 
 class MainContainer extends Component{
     constructor(){
@@ -8,7 +9,9 @@ class MainContainer extends Component{
         return(
             <div>
                 <h1> Welcome to your Pokedex, {this.props.username} </h1>
-            </div>  
+                <h2> Your Current Poke Team is: </h2>
+                <Pokemon />
+            </div> 
         )
     }
 
